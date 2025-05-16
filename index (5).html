@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Магазин Karcher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #ffd700;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.5em;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .product {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background: #f0f0f0;
+    }
+    .product-content {
+      padding: 15px;
+    }
+    .product h2 {
+      font-size: 1.1em;
+      margin: 10px 0 5px;
+    }
+    .product p {
+      margin: 5px 0;
+      font-size: 0.95em;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Пылесосы Karcher</h1>
+</header>
+
+<div class="container">
+  <div class="products">
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="https://cdn.technodom.kz/unsafe/640x640/filters:quality(75):no_upscale()/https://technodom.kz/media/catalog/product/2/6/260454_1.jpg" alt="Karcher VC 3">
+      <div class="product-content">
+        <h2>Karcher VC 3</h2>
+        <p><strong>Цена:</strong> 19 490 ₽</p>
+        <p>Компактный пылесос с мультициклонной системой и HEPA-фильтром.</p>
+      </div>
+    </div>
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="https://object.pscloud.io/cms/cms/Photo/img_0_62_2157_2_1.jpg" alt="Karcher WD 2">
+      <div class="product-content">
+        <h2>Karcher WD 2</h2>
+        <p><strong>Цена:</strong> 7 790 ₽</p>
+        <p>Для сухой и влажной уборки. Вместительный бак и мощный мотор.</p>
+      </div>
+    </div>
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/81Zk0UdzZXL._AC_SL1500_.jpg" alt="Karcher WD 3">
+      <div class="product-content">
+        <h2>Karcher WD 3</h2>
+        <p><strong>Цена:</strong> 12 650 ₽</p>
+        <p>Универсальный пылесос с функцией выдува и фильтрацией.</p>
+      </div>
+    </div>
+    <!-- Product 4 -->
+    <div class="product">
+      <img src="https://static.wixstatic.com/media/6c8a71_7a90d96e6cdd4d65a7f8dd514f54ed4f~mv2.jpg" alt="Karcher VC 4">
+      <div class="product-content">
+        <h2>Karcher VC 4</h2>
+        <p><strong>Цена:</strong> 22 300 ₽</p>
+        <p>Вертикальный пылесос с легкой конструкцией и тихой работой.</p>
+      </div>
+    </div>
+    <!-- Product 5 -->
+    <div class="product">
+      <img src="https://img.mvideo.ru/Pdb/20039546b.jpg" alt="Karcher VC 5">
+      <div class="product-content">
+        <h2>Karcher VC 5</h2>
+        <p><strong>Цена:</strong> 18 990 ₽</p>
+        <p>Складной компактный пылесос с многоступенчатой фильтрацией.</p>
+      </div>
+    </div>
+    <!-- Product 6 -->
+    <div class="product">
+      <img src="https://static.insales-cdn.com/images/products/1/2310/544697846/karcher_ds_6.jpg" alt="Karcher DS 6">
+      <div class="product-content">
+        <h2>Karcher DS 6</h2>
+        <p><strong>Цена:</strong> 24 990 ₽</p>
+        <p>Пылесос с водяным фильтром и высоким уровнем очистки воздуха.</p>
+      </div>
+    </div>
+    <!-- Product 7 -->
+    <div class="product">
+      <img src="https://static.karcher.com/image/upload/c_pad,d_no_image.png,f_auto,h_600,w_600/v1/products/26870000_PS_f01.jpg" alt="Karcher VC 2">
+      <div class="product-content">
+        <h2>Karcher VC 2</h2>
+        <p><strong>Цена:</strong> 15 990 ₽</p>
+        <p>Классический пылесос с мешком и компактным дизайном.</p>
+      </div>
+    </div>
+    <!-- Product 8 -->
+    <div class="product">
+      <img src="https://images.philips.com/is/image/PhilipsConsumer/FC9747_09-IMS-ru_RU?$jpglarge$&wid=960" alt="Karcher FC 5">
+      <div class="product-content">
+        <h2>Karcher FC 5</h2>
+        <p><strong>Цена:</strong> 26 490 ₽</p>
+        <p>Поломойка и пылесос в одном. Идеален для твердых покрытий.</p>
+      </div>
+    </div>
+    <!-- Product 9 -->
+    <div class="product">
+      <img src="https://karcherus.ru/upload/iblock/fe3/fe3faddc2e476fa69d8e13b5c08c8bb8.jpg" alt="Karcher VC 6">
+      <div class="product-content">
+        <h2>Karcher VC 6</h2>
+        <p><strong>Цена:</strong> 29 990 ₽</p>
+        <p>Мощный беспроводной пылесос с OLED-дисплеем и датчиками.</p>
+      </div>
+    </div>
+    <!-- Product 10 -->
+    <div class="product">
+      <img src="https://www.karcher-center-vitay.ru/upload/iblock/e35/e35f6bc939cb70878fdd4708ae40a0d9.jpg" alt="Karcher SE 4002">
+      <div class="product-content">
+        <h2>Karcher SE 4002</h2>
+        <p><strong>Цена:</strong> 32 990 ₽</p>
+        <p>Пылесос для влажной чистки ковров и обивки. Профессиональный уровень.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Свяжитесь с нами: +998 90 812 34 58</p>
+</footer>
+
+</body>
+</html>
